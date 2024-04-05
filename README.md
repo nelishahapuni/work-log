@@ -1,20 +1,32 @@
 # work-log
 Logs and description of all my work, updated on a (mostly) daily basis.
 
-5 April 2024
+*Log Date: 5 April 2024*
+
+# Questions
+- Do I need to receive devices to test on? (Android/iPhone)
+- What are the practical/everyday tasks that will be done with Appium?
+- What knowledge should I have in Android/Flutter/React Native (other than accessibility IDs)
+
+# Completed Tasks
+- Installed Java, Android Studio, NodeJS
+- Installed Appium, Appium Inspector, open WebDriverAgent
+- Completed "Preparation Topics for Client"
+- Watched: [Setup appium for iOS Real Device and Simulator](https://youtu.be/hKHHGZq82Bk?si=zEWDa67Sctf4Ardk)
+- Read: [Appium Accessibility IDs: Why and How to Set Them](https://www.waldo.com/blog/appium-accessibility-id)
 
 # Preparation Topics for Client
 
 - [Appium with Java](#appium-with-java)
 - [Accessibility Labels (Android & iOS)](#accessibility-labels-android-ios)
-- [Create APP Binary Exposed for Automation](#create-app-binary-exposed-for-automation)
+- [Create App Binaries Exposed for Automation](#create-app-binaries-exposed-for-automation)
 - [How SDKs Interact with App](#how-sdks-interact-with-app)
 - [How Web Views Work](#how-web-views-work)
 - [Exposing WebViews to APPIUM](#exposing-web-views-to-appium)
 - [Setup Mock Server to Test API](#setup-mock-server-to-test-api)
 - [Production & Non-Production binaries](#production-non-production-binaries)
 
-## APPIUM with Java
+## APPIUM with Java (installed via Terminal)
 - XCUItest iOS driver (Instruments)
 - UI Automator for Android
 
@@ -76,9 +88,26 @@ Manual
 - Force Upgrade
 - Localization/Internationalization
 
-### Additionally
+### Key Testing Areas 
 - Open app from background
 - Screen Orientation
 - Touch Gesture
 
 Test on devices with most users, latest OS version, and minimum supported version.
+
+# Accessibility Labels (Android & iOS)
+- Accessibility ID on iOS and 'content description' on Android to find element in Appium Inspector
+- Cross-platform frameworks (React Native or Flutter) have the same accessibility ID for Android/iOS
+- Used to identify elements without text (usually buttons or images)
+- Locator Strategies: Find element by ID *e.g. driver.findElement(By.id("com.google.android.calculator:id/digit_5"))*
+- ![image](https://github.com/nelishahapuni/work-log/assets/28424871/b42252a4-f281-43d8-85b2-91ed3dc2e5a8)
+
+# Create App Binaries Exposed for Automation
+
+## iOS Binaries
+- Binary Framework - already compiled source code w/defined interface that you can use in your apps
+- Protects code that contains intellectual property
+- Create **Cocoa Touch Framework** -> MyCustomFramework
+- Header file *MyCustomFramework.h*: header that interacts between framework & host app
+
+
