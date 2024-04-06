@@ -110,4 +110,15 @@ Test on devices with most users, latest OS version, and minimum supported versio
 - Create **Cocoa Touch Framework** -> MyCustomFramework
 - Header file *MyCustomFramework.h*: header that interacts between framework & host app
 
+# How SDKs Interact with App
+
+[Integrating React Native as an SDK into Existing iOS App](https://medium.com/@saikrishnakotagiri16/integrating-react-native-as-an-sdk-into-a-existing-ios-app-f659cc1645a)
+
+1. Create new React Native Project
+
+# How Web Views Work
+
+- 'android.webkit.WebView' on Android and 'WKWebView' or 'UIWebView' on iOS
+
+## Switch from Native to Web View in Appium
 
