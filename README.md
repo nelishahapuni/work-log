@@ -1,6 +1,16 @@
 # work-log
 Logs and description of all my work, updated on a (mostly) daily basis.
 
+*Log Date: 6 April 2024*
+
+# Competed Tasks
+- Installed Eclipse, Java, Selenium, Maven
+- To get Device ID use the following command: **xcrun xctrace list devices**
+- Download Drivers: xcuitest, uiautomator, safari, chromium
+- Execute automation via Eclipse using java/selenium commands
+- Watched: [How to create iOS automation testing project in java](https://youtu.be/eVfVacefiGo?si=GZEUtCtQW1iyKmXC)
+- Read: [iOS Desired Capabilities](https://appium.io/docs/en/2.0/guides/caps/)
+
 *Log Date: 5 April 2024*
 
 # Questions
