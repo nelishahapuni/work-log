@@ -1,9 +1,23 @@
 # work-log
-Logs and description of all my work, updated on a (mostly) daily basis.
+Logs and description of all my work.
 
+# Fix unreachable elements in Appium
+*Log Date: 22 April 2024*
+
+- The core issue is related to the nested elements, Appium cannot load all of them.
+- This is caused by the "Stack Navigator" (in react native), specifically in iOS due to how the XCUITEST driver loads elements.
+- It seems that it generates lots of nested element and it makes deeper-nested elements unreachable.
+
+How I resolved it:
+1. Replace "Stack Navigator" with "Native Stack Navigator" in the react native code. This is a different library which generates less nested elements, so the smaller ones are reachable.
+2. Make sure that in APPIUM you set **"appium:settings[snapshotMaxDepth]": 62**
+(you can try with a bigger number, but appium times out on my machine when I input 63 or more)
+3. Both conditions need to be met, only one or the other is not enough
+
+
+# Preparation Tasks
 *Log Date: 6 April 2024*
 
-# Competed Tasks
 - Installed Eclipse, Java, Selenium, Maven
 - To get Device ID use the following command: **xcrun xctrace list devices**
 - Download Drivers: xcuitest, uiautomator, safari, chromium
